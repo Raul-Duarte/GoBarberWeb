@@ -1,15 +1,17 @@
 import React from 'react';
 import PropTypes from 'prop-types'
-import { Wrapper } from './styles';
+import { Wrapper, Content } from './styles';
 
-export default function AuthLayout({children}) {
+export default function AuthLayout({ children }) {
   return (
     <Wrapper>
+      <Content>
         {children}
+      </Content>
     </Wrapper>
   );
 }
 
-AuthLayout.prototype={
-    children: PropTypes.element.isRequired,
+AuthLayout.prototype = {
+  children: PropTypes.element.isRequired,
 }
